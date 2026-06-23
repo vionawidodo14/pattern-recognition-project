@@ -1,0 +1,5 @@
+datasets==5.0.0
+pandas==3.0.3
+pyarrow==24.0.0
+spacy==3.8.13
+tqdm==4.68.3
