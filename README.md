@@ -1,11 +1,13 @@
 # Pattern Recognition Project
-###0. Python Environment Setup
-Python Versions: 3.14x
+
+## How to run
+
+### 0. Python Environment Setup
+Python Versions: 3.14.x
 ```bash
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 ```
-## How to run
 
 ### 1. Clean the dataset
 ```bash
