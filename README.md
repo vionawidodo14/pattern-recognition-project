@@ -9,6 +9,7 @@ Python Versions: 3.14.x
 python3 -m venv .venv
 source .venv/bin/activate
 
+#dependencies installation (DONT SKIP)
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 ```
