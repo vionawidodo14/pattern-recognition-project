@@ -5,7 +5,7 @@
 ### 0. Python Environment Setup
 Python Versions: 3.14.x
 ```bash
-#venv creation
+#venv creation (skip if venv is already created)
 python3 -m venv .venv
 source .venv/bin/activate
 
