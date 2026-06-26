@@ -1,0 +1,72 @@
+=== pos  (pos) ===
+  epoch 1  train f1 0.6171  |  val acc 0.7220  f1 0.6826
+  epoch 2  train f1 0.7397  |  val acc 0.7810  f1 0.7904
+  epoch 3  train f1 0.7757  |  val acc 0.7750  f1 0.7557
+  epoch 4  train f1 0.8107  |  val acc 0.8160  f1 0.8119
+  epoch 5  train f1 0.8346  |  val acc 0.8370  f1 0.8297
+  epoch 6  train f1 0.8467  |  val acc 0.8210  f1 0.8240
+  saved -> models\bilstm_pos.pt  (best val f1 0.8297)
+
+=== dep  (dep) ===
+  epoch 1  train f1 0.6254  |  val acc 0.7510  f1 0.7467
+  epoch 2  train f1 0.7564  |  val acc 0.7770  f1 0.7620
+  epoch 3  train f1 0.7837  |  val acc 0.8000  f1 0.8131
+  epoch 4  train f1 0.8012  |  val acc 0.7930  f1 0.7886
+  epoch 5  train f1 0.8187  |  val acc 0.8300  f1 0.8286
+  epoch 6  train f1 0.8374  |  val acc 0.8380  f1 0.8445
+  saved -> models\bilstm_dep.pt  (best val f1 0.8445)
+
+=== shape  (shape) ===
+  epoch 1  train f1 0.6285  |  val acc 0.7230  f1 0.6231
+  epoch 2  train f1 0.8145  |  val acc 0.8410  f1 0.8203
+  epoch 3  train f1 0.8738  |  val acc 0.8920  f1 0.8861
+  epoch 4  train f1 0.8821  |  val acc 0.9050  f1 0.9020
+  epoch 5  train f1 0.9005  |  val acc 0.9080  f1 0.9053
+  epoch 6  train f1 0.9049  |  val acc 0.9080  f1 0.9053
+  saved -> models\bilstm_shape.pt  (best val f1 0.9053)
+
+=== pos_dep  (pos + dep) ===
+  epoch 1  train f1 0.6518  |  val acc 0.7370  f1 0.7132
+  epoch 2  train f1 0.7729  |  val acc 0.7540  f1 0.7000
+  epoch 3  train f1 0.8238  |  val acc 0.8410  f1 0.8405
+  epoch 4  train f1 0.8512  |  val acc 0.8740  f1 0.8740
+  epoch 5  train f1 0.8827  |  val acc 0.8790  f1 0.8798
+  epoch 6  train f1 0.8951  |  val acc 0.8800  f1 0.8701
+  saved -> models\bilstm_pos_dep.pt  (best val f1 0.8798)
+
+=== pos_shape  (pos + shape) ===
+  epoch 1  train f1 0.7180  |  val acc 0.7540  f1 0.6737
+  epoch 2  train f1 0.8026  |  val acc 0.8680  f1 0.8625
+  epoch 3  train f1 0.8850  |  val acc 0.8880  f1 0.8772
+  epoch 4  train f1 0.9100  |  val acc 0.9150  f1 0.9106
+  epoch 5  train f1 0.9285  |  val acc 0.9110  f1 0.9044
+  epoch 6  train f1 0.9350  |  val acc 0.9350  f1 0.9325
+  saved -> models\bilstm_pos_shape.pt  (best val f1 0.9325)
+
+=== dep_shape  (dep + shape) ===
+  epoch 1  train f1 0.6975  |  val acc 0.8150  f1 0.8174
+  epoch 2  train f1 0.8380  |  val acc 0.8820  f1 0.8793
+  epoch 3  train f1 0.8845  |  val acc 0.9020  f1 0.8983
+  epoch 4  train f1 0.9007  |  val acc 0.8910  f1 0.8930
+  epoch 5  train f1 0.9125  |  val acc 0.9310  f1 0.9315
+  epoch 6  train f1 0.9312  |  val acc 0.9310  f1 0.9285
+  saved -> models\bilstm_dep_shape.pt  (best val f1 0.9315)
+
+=== pos_dep_shape  (pos + dep + shape) ===
+  epoch 1  train f1 0.7199  |  val acc 0.8030  f1 0.8161
+  epoch 2  train f1 0.8401  |  val acc 0.8580  f1 0.8473
+  epoch 3  train f1 0.8938  |  val acc 0.8900  f1 0.8875
+  epoch 4  train f1 0.9206  |  val acc 0.9160  f1 0.9103
+  epoch 5  train f1 0.9328  |  val acc 0.9260  f1 0.9219
+  epoch 6  train f1 0.9415  |  val acc 0.9420  f1 0.9398
+  saved -> models\bilstm_pos_dep_shape.pt  (best val f1 0.9398)
+
+
+Best validation F1 per model:
+  pos_dep_shape    0.9398
+  pos_shape        0.9325
+  dep_shape        0.9315
+  shape            0.9053
+  pos_dep          0.8798
+  dep              0.8445
+  pos              0.8297
