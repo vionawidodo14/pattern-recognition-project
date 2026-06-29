@@ -1,5 +1,13 @@
+# --- Data prep + feature extraction ---
 datasets==5.0.0
 pandas==3.0.3
 pyarrow==24.0.0
 spacy==3.8.13
 tqdm==4.68.3
+
+# --- Training + evaluation (model / ablation / eval stage) ---
+# Versions left unpinned; pin to whatever your environment uses if needed.
+torch
+scikit-learn
+matplotlib
+tabulate
