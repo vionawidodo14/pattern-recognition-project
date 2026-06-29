@@ -1,0 +1,11 @@
+Reference (highest test accuracy): pos_dep_shape  (acc 0.9450)
+alpha = 0.05   (a 'significant' result means the two models differ beyond chance)
+
+pos_dep_shape vs pos_shape            acc 0.945 vs 0.941  | pos_dep_shape right/other wrong = 21, other right/pos_dep_shape wrong = 17  | p = 0.6271  -> not significant
+pos_dep_shape vs lexical_tfidf_lr     acc 0.945 vs 0.941  | pos_dep_shape right/other wrong = 50, other right/pos_dep_shape wrong = 46  | p = 0.7596  -> not significant
+pos_dep_shape vs dep_shape            acc 0.945 vs 0.930  | pos_dep_shape right/other wrong = 41, other right/pos_dep_shape wrong = 26  | p = 0.0864  -> not significant
+pos_dep_shape vs shape                acc 0.945 vs 0.914  | pos_dep_shape right/other wrong = 52, other right/pos_dep_shape wrong = 21  | p = 0.0004  -> SIGNIFICANT
+pos_dep_shape vs pos_dep              acc 0.945 vs 0.890  | pos_dep_shape right/other wrong = 83, other right/pos_dep_shape wrong = 28  | p = 0.0000  -> SIGNIFICANT
+pos_dep_shape vs pos                  acc 0.945 vs 0.849  | pos_dep_shape right/other wrong = 116, other right/pos_dep_shape wrong = 20  | p = 0.0000  -> SIGNIFICANT
+pos_dep_shape vs dep                  acc 0.945 vs 0.811  | pos_dep_shape right/other wrong = 162, other right/pos_dep_shape wrong = 28  | p = 0.0000  -> SIGNIFICANT
+pos_dep_shape vs baseline_length_only acc 0.945 vs 0.557  | pos_dep_shape right/other wrong = 423, other right/pos_dep_shape wrong = 35  | p = 0.0000  -> SIGNIFICANT

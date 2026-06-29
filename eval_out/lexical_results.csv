@@ -1,0 +1,2 @@
+model,accuracy,precision_macro,recall_macro,f1_macro,f1_pos,roc_auc
+lexical_tfidf_lr,0.941,0.9413,0.941,0.941,0.9418,0.989
